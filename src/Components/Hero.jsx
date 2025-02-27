@@ -2,6 +2,7 @@ import React, { useRef } from "react";
 import { FaLocationArrow } from "react-icons/fa6";
 import { gsap } from "gsap";
 import { useGSAP } from "@gsap/react";
+import Splinescene from "./Splinescene";
 
 const Hero = () => {
   const textRef = useRef(null);
@@ -24,8 +25,10 @@ const Hero = () => {
   ));
 
   return (
-    <div className="w-full overflow-hidden bg-[#0a0a0a]">
-      <div className="px-5 md:px-10 flex flex-col-reverse md:flex-row overflow-hidden items-center justify-between min-h-screen">
+    <section className="w-full relative overflow-hidden bg-[#0a0a0a] oveflow-hidden">
+         
+
+      <div className="px-5 md:px-10 flex flex-col md:flex-row overflow-hidden items-center justify-between min-h-screen">
         {/* Left Side Content */}
         <div className="flex flex-col gap-6 w-full md:w-1/2 text-white">
           {/* Availability Text */}
@@ -55,7 +58,7 @@ const Hero = () => {
           />
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

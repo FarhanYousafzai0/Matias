@@ -71,3 +71,18 @@
       opacity: 0;
     }
   }
+
+  /* /* Custom vertical scrollbar */
+::-webkit-scrollbar {
+  width: 8px; /* Adjust the width */
+}
+
+::-webkit-scrollbar-thumb {
+  height: 2px; /* Limits the thumb size */
+  background: #C3EB1D; /* Scrollbar color */
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: black;
+}
